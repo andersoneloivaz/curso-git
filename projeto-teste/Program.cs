@@ -7,15 +7,17 @@ namespace projeto_teste
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            int x = 2;
-            int y = 3;
+            string nome, cidade;
+            DateTime datanasc;
 
-            for (int i = 0; i < x; i++)
-            {
-                Console.WriteLine(x);
-                Console.WriteLine(y);
+            Console.Write("Nome: ");
+            nome = Console.ReadLine();
+            Console.Write("Cidade: ");
+            cidade = Console.ReadLine();
+            Console.Write("Nascimento: ");
+            datanasc = DateTime.Parse(Console.ReadLine());
+            Console.WriteLine("Nome: " + nome + ", Cidade: " + cidade + "Data de Nascimento: " + datanasc + ".");
 
-            }
         }
     }
 }
